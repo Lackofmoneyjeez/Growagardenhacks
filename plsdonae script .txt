@@ -784,19 +784,24 @@ ScreenGui.Name = "ZiegriedHubV4"
 ScreenGui.Parent = PlayerGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-local ToggleButton = Instance.new("ImageButton")
+local ToggleButton = Instance.new("TextButton")
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = ScreenGui
-ToggleButton.BackgroundTransparency = 1
-ToggleButton.Image = "rbxassetid://1722045296"
+ToggleButton.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 ToggleButton.Size = UDim2.new(0, 50, 0, 50)
 ToggleButton.Position = UDim2.new(0, 20, 0.5, -25)
 ToggleButton.Draggable = true
 
+-- Text settings
+ToggleButton.Text = "X"
+ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleButton.TextScaled = true
+ToggleButton.Font = Enum.Font.GothamBold
+
+-- Rounded corners
 local ToggleButtonCorner = Instance.new("UICorner")
 ToggleButtonCorner.CornerRadius = UDim.new(0, 12)
 ToggleButtonCorner.Parent = ToggleButton
-
 local MainFrame = Instance.new("Frame")
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScreenGui
